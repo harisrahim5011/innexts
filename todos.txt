@@ -1,0 +1,7 @@
+carousel start  done, mobile version done resp
+card start done, responsive done
+content start done, content responsive
+card info done, resp 
+footer under work
+
+navbar done, resp 

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-full md:px-10 px-3 py-3 bg-slate-100;
+  }
+  h1{
+    @apply text-3xl
+  }
+  button{
+    @apply bg-blue-500 p-2 rounded-lg font-bold
+  }
+
+}
+
+@layer components {
+}
