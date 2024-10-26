@@ -12,10 +12,13 @@ import CardInfo from "./components/CardInfo.jsx";
 import NavFinal from "./components/NavFinal.jsx";
 import MobileCarousel from "./components/MobileCarousel.jsx";
 
+
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
 
     {/* <App /> */}
+
     <NavFinal></NavFinal>
     {/* <Card></Card> */}
     <MobileCarousel></MobileCarousel>
