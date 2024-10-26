@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { CiBoxList } from "react-icons/ci";
+import star from "../assets/logo-small.png"; 
+
+<img className="w-8" src={star} />
 
 export default function NavFinal() {
   const [showMenu, setshowMenu] = useState(false);
@@ -8,7 +11,7 @@ export default function NavFinal() {
     <div className="">
       <div className="mb-2 md:py-2 flex justify-between w-[80vw] mx-auto border-2 rounded-3xl px-4 shadow-sm ">
         <div className="w-20 md:w-32  flex items-center">
-          <img src=".././Images/logo-small.png" alt="" className="" />
+          <img src={star} alt="logo"  />
         </div>
         <ul className="hidden  gap-5 md:flex">
           <li className="p-1">
