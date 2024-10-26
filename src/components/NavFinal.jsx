@@ -28,7 +28,7 @@ export default function NavFinal() {
           </li>
         </ul>
         <div>
-          <button className="bg-blue-500 p-2 rounded-lg w-40 hidden md:inline-block  ">
+          <button className="bg-emerald-500 p-2 rounded-lg w-40 hidden md:inline-block  ">
             Call
           </button>
           <button
