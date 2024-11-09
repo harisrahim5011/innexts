@@ -1,9 +1,12 @@
-export default function Card() {
+import star from "../assets/financialService/financial.png"; 
+
+export default function Card({picture, para, title}) {
   return (
     <div className="max-w-96 flex flex-col items-center gap-5 border [&>*]:text-center rounded-xl  ">
       <div className="">
         <img className="rounded-xl "
-          src="https://cdn.pixabay.com/photo/2016/01/31/19/41/apple-1172060_960_720.jpg"
+          // src="https://cdn.pixabay.com/photo/2016/01/31/19/41/apple-1172060_960_720.jpg"
+          src={star}
           alt="pic"
         />
       </div>

@@ -1,33 +1,31 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./components/App.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 
-import Content from "./components/Content.jsx";
-import CloudMovingIcons from "./components/CloudMovingIcons.jsx";
-import Footer from "./components/Footer.jsx";
-import Card from "./components/Card.jsx";
-import Carousel2 from "./components/Carousel2.jsx";
-import CardInfo from "./components/CardInfo.jsx";
-import NavFinal from "./components/NavFinal.jsx";
-import MobileCarousel from "./components/MobileCarousel.jsx";
-
-
+import Home from "./Pages/Home.jsx";
+// import AnimateTest from "./components/AnimateTest.jsx";
+import About from "./Pages/About";
+import Service from "./Pages/Service";
+import ContactUs from "./Pages/ContactUs";
+import NavFinal from "./components/NavFinal"
+// import TestPage from "./Pages/TestPage"
+// import TestPageSecond from "./Pages/TestPageSecond"
+// import TestNav from "./components/TestNav"
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-
-    {/* <App /> */}
-
-    <NavFinal></NavFinal>
-    {/* <Card></Card> */}
-    <MobileCarousel></MobileCarousel>
-    <Carousel2></Carousel2>
-    <Content></Content>
-
-    {/* <CloudMovingIcons></CloudMovingIcons> */}
-
-    <CardInfo></CardInfo> 
-    <Footer></Footer>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/innexts" element={<NavFinal />}>
+          <Route index element={<Home />} />
+          <Route path="/innexts/about" element={<About />} />
+          <Route path="/innexts/service" element={<Service />} />
+          <Route path="/innexts/contact" element={<ContactUs />} />
+          {/* <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </StrictMode>
 );

@@ -5,3 +5,9 @@ card info done, resp
 footer under work
 
 navbar done, resp 
+
+animate... [under process]
+
+about page wokring stared
+
+branch master rebased, fetched, start work...
